@@ -418,77 +418,113 @@
 		\def \@Skills@x {-0.71}
 		\def \@Skills@y {-8.40}
 		\def \@Skills@dist {-0.4635}
+		\def \@Acrobatics@x {\@Skills@x}
+		\def \@Acrobatics@y {\@Skills@y}
+		\def \@Animal@x {\@Skills@x}
+		\def \@Animal@y {\@Skills@y+\@Skills@dist}
+		\def \@Arcana@x {\@Skills@x}
+		\def \@Arcana@y {\@Skills@y+2*\@Skills@dist}
+		\def \@Athletics@x {\@Skills@x}
+		\def \@Athletics@y {\@Skills@y+3*\@Skills@dist}
+		\def \@Deception@x {\@Skills@x}
+		\def \@Deception@y {\@Skills@y+4*\@Skills@dist}
+		\def \@History@x {\@Skills@x}
+		\def \@History@y {\@Skills@y+5*\@Skills@dist}
+		\def \@Insight@x {\@Skills@x}
+		\def \@Insight@y {\@Skills@y+6*\@Skills@dist}
+		\def \@Intimidation@x {\@Skills@x}
+		\def \@Intimidation@y {\@Skills@y+7*\@Skills@dist}
+		\def \@Investigation@x {\@Skills@x}
+		\def \@Investigation@y {\@Skills@y+8*\@Skills@dist}
+		\def \@Medicine@x {\@Skills@x}
+		\def \@Medicine@y {\@Skills@y+9*\@Skills@dist}
+		\def \@Nature@x {\@Skills@x}
+		\def \@Nature@y {\@Skills@y+10*\@Skills@dist}
+		\def \@Perception@x {\@Skills@x}
+		\def \@Perception@y {\@Skills@y+11*\@Skills@dist}
+		\def \@Performance@x {\@Skills@x}
+		\def \@Performance@y {\@Skills@y+12*\@Skills@dist}
+		\def \@Persuasion@x {\@Skills@x}
+		\def \@Persuasion@y {\@Skills@y+13*\@Skills@dist}
+		\def \@Religion@x {\@Skills@x}
+		\def \@Religion@y {\@Skills@y+14*\@Skills@dist}
+		\def \@SleightOfHand@x {\@Skills@x}
+		\def \@SleightOfHand@y {\@Skills@y+15*\@Skills@dist}
+		\def \@Stealth@x {\@Skills@x}
+		\def \@Stealth@y {\@Skills@y+16*\@Skills@dist}
+		\def \@Survival@x {\@Skills@x}
+		\def \@Survival@y {\@Skills@y+17*\@Skills@dist}
 		% Acrobatics
 		\ifnum \@DndBase@Skills@Acrobatics > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Acrobatics@x, \@Acrobatics@y) {};
 		\fi
 		% Animal handling
 		\ifnum \@DndBase@Skills@Animals > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Animal@x, \@Animal@y) {};
 		\fi
 		% Arcana
 		\ifnum \@DndBase@Skills@Arcana > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+2*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Arcana@x, \@Arcana@y) {};
 		\fi
 		% Athletics
 		\ifnum \@DndBase@Skills@Athletics > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+3*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Athletics@x, \@Athletics@y) {};
 		\fi
 		% Deception
 		\ifnum \@DndBase@Skills@Deception > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+4*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Deception@x, \@Deception@y) {};
 		\fi
 		% History
 		\ifnum \@DndBase@Skills@History > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+5*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@History@x, \@History@y) {};
 		\fi
 		% Insight
 		\ifnum \@DndBase@Skills@Insight > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+6*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Insight@x, \@Insight@y) {};
 		\fi
 		% Intimidation
 		\ifnum \@DndBase@Skills@Intimidation > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+7*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Intimidation@x, \@Intimidation@y) {};
 		\fi
 		% Investigation
 		\ifnum \@DndBase@Skills@Investigation > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+8*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Investigation@x, \@Investigation@y) {};
 		\fi
 		% Medicine
 		\ifnum \@DndBase@Skills@Medicine > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+9*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Medicine@x, \@Medicine@y) {};
 		\fi
 		% Nature
 		\ifnum \@DndBase@Skills@Nature > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+10*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Nature@x, \@Nature@y) {};
 		\fi
 		% Perception
 		\ifnum \@DndBase@Skills@Perception > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+11*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Perception@x, \@Perception@y) {};
 		\fi
 		% Performance
 		\ifnum \@DndBase@Skills@Performance > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+12*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Performance@x, \@Performance@y) {};
 		\fi
 		% Persuasion
 		\ifnum \@DndBase@Skills@Persuasion > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+13*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Persuasion@x, \@Persuasion@y) {};
 		\fi
 		% Religion
 		\ifnum \@DndBase@Skills@Religion > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+14*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Religion@x, \@Religion@y) {};
 		\fi
 		% Sleight of hand
 		\ifnum \@DndBase@Skills@SleightOfHand > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+15*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@SleightOfHand@x, \@SleightOfHand@y) {};
 		\fi
 		% Stealth
 		\ifnum \@DndBase@Skills@Stealth > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+16*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Stealth@x, \@Stealth@y) {};
 		\fi
 		% Survival
 		\ifnum \@DndBase@Skills@Survival > 0
-			\node[circle,fill,inner sep=1.2pt,label=] at (\@Skills@x, \@Skills@y+17*\@Skills@dist) {};
+			\node[circle,fill,inner sep=1.2pt,label=] at (\@Survival@x, \@Survival@y) {};
 		\fi
 		%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -501,94 +537,130 @@
 		\def \@SkillValues@x {-0.20}
 		\def \@SkillValues@y {-8.40}
 		\def \@SkillValues@dist {-0.4635}
+		\def \@AcrobaticsValue@x {\@SkillValues@x}
+		\def \@AcrobaticsValue@y {\@SkillValues@y}
+		\def \@AnimalValue@x {\@SkillValues@x}
+		\def \@AnimalValue@y {\@SkillValues@y+\@SkillValues@dist}
+		\def \@ArcanaValue@x {\@SkillValues@x}
+		\def \@ArcanaValue@y {\@SkillValues@y+2*\@SkillValues@dist}
+		\def \@AthleticsValue@x {\@SkillValues@x}
+		\def \@AthleticsValue@y {\@SkillValues@y+3*\@SkillValues@dist}
+		\def \@DeceptionValue@x {\@SkillValues@x}
+		\def \@DeceptionValue@y {\@SkillValues@y+4*\@SkillValues@dist}
+		\def \@HistoryValue@x {\@SkillValues@x}
+		\def \@HistoryValue@y {\@SkillValues@y+5*\@SkillValues@dist}
+		\def \@InsightValue@x {\@SkillValues@x}
+		\def \@InsightValue@y {\@SkillValues@y+6*\@SkillValues@dist}
+		\def \@IntimidationValue@x {\@SkillValues@x}
+		\def \@IntimidationValue@y {\@SkillValues@y+7*\@SkillValues@dist}
+		\def \@InvestigationValue@x {\@SkillValues@x}
+		\def \@InvestigationValue@y {\@SkillValues@y+8*\@SkillValues@dist}
+		\def \@MedicineValue@x {\@SkillValues@x}
+		\def \@MedicineValue@y {\@SkillValues@y+9*\@SkillValues@dist}
+		\def \@NatureValue@x {\@SkillValues@x}
+		\def \@NatureValue@y {\@SkillValues@y+10*\@SkillValues@dist}
+		\def \@PerceptionValue@x {\@SkillValues@x}
+		\def \@PerceptionValue@y {\@SkillValues@y+11*\@SkillValues@dist}
+		\def \@PerformanceValue@x {\@SkillValues@x}
+		\def \@PerformanceValue@y {\@SkillValues@y+12*\@SkillValues@dist}
+		\def \@PersuasionValue@x {\@SkillValues@x}
+		\def \@PersuasionValue@y {\@SkillValues@y+13*\@SkillValues@dist}
+		\def \@ReligionValue@x {\@SkillValues@x}
+		\def \@ReligionValue@y {\@SkillValues@y+14*\@SkillValues@dist}
+		\def \@SleightOfHandValue@x {\@SkillValues@x}
+		\def \@SleightOfHandValue@y {\@SkillValues@y+15*\@SkillValues@dist}
+		\def \@StealthValue@x {\@SkillValues@x}
+		\def \@StealthValue@y {\@SkillValues@y+16*\@SkillValues@dist}
+		\def \@SurvivalValue@x {\@SkillValues@x}
+		\def \@SurvivalValue@y {\@SkillValues@y+17*\@SkillValues@dist}
 		% Acrobatics
 		\ifdefined\@DndBase@Abilities@Dexterity
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@AcrobaticsValue@x, \@AcrobaticsValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Dexterity}}{\@DndBase@Skills@Acrobatics}}};
 		\fi
 		% Animal handling
 		\ifdefined\@DndBase@Abilities@Wisdom
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@AnimalValue@x, \@AnimalValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Animals}}};
 		\fi
 		% Arcana
 		\ifdefined\@DndBase@Abilities@Intelligence
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+2*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@ArcanaValue@x, \@ArcanaValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Intelligence}}{\@DndBase@Skills@Arcana}}};
 		\fi
 		% Athletics
 		\ifdefined\@DndBase@Abilities@Strength
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+3*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@AthleticsValue@x, \@AthleticsValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Strength}}{\@DndBase@Skills@Athletics}}};
 		\fi
 		% Deception
 		\ifdefined\@DndBase@Abilities@Charisma
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+4*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@DeceptionValue@x, \@DeceptionValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Deception}}};
 		\fi
 		% History
 		\ifdefined\@DndBase@Abilities@Intelligence
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+5*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@HistoryValue@x, \@HistoryValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Intelligence}}{\@DndBase@Skills@History}}};
 		\fi
 		% Insight
 		\ifdefined\@DndBase@Abilities@Wisdom
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+6*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@InsightValue@x, \@InsightValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Insight}}};
 		\fi
 		% Intimidation
 		\ifdefined\@DndBase@Abilities@Charisma
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+7*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@IntimidationValue@x, \@IntimidationValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Intimidation}}};
 		\fi
 		% Investigation
 		\ifdefined\@DndBase@Abilities@Intelligence
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+8*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@InvestigationValue@x, \@InvestigationValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Intelligence}}{\@DndBase@Skills@Investigation}}};
 		\fi
 		% Medicine
 		\ifdefined\@DndBase@Abilities@Wisdom
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+9*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@MedicineValue@x, \@MedicineValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Medicine}}};
 		\fi
 		% Nature
 		\ifdefined\@DndBase@Abilities@Intelligence
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+10*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@NatureValue@x, \@NatureValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Intelligence}}{\@DndBase@Skills@Nature}}};
 		\fi
 		% Perception
 		\ifdefined\@DndBase@Abilities@Wisdom
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+11*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@PerceptionValue@x, \@PerceptionValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Perception}}};
 		\fi
 		% Performance
 		\ifdefined\@DndBase@Abilities@Charisma
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+12*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@PerformanceValue@x, \@PerformanceValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Performance}}};
 		\fi
 		% Persuasion
 		\ifdefined\@DndBase@Abilities@Charisma
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+13*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@PersuasionValue@x, \@PersuasionValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Persuasion}}};
 		\fi
 		% Religion
 		\ifdefined\@DndBase@Abilities@Intelligence
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+14*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@ReligionValue@x, \@ReligionValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Intelligence}}{\@DndBase@Skills@Religion}}};
 		\fi
 		% Sleight of hand
 		\ifdefined\@DndBase@Abilities@Dexterity
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+15*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SleightOfHandValue@x, \@SleightOfHandValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Dexterity}}{\@DndBase@Skills@SleightOfHand}}};
 		\fi
 		% Stealth
 		\ifdefined\@DndBase@Abilities@Dexterity
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+16*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@StealthValue@x, \@StealthValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Dexterity}}{\@DndBase@Skills@Stealth}}};
 		\fi
 		% Survival
 		\ifdefined\@DndBase@Abilities@Wisdom
-			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SkillValues@x, \@SkillValues@y+17*\@SkillValues@dist) {\small
+			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@SurvivalValue@x, \@SurvivalValue@y) {\small
 				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Survival}}};
 		\fi
 		%

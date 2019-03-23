@@ -18,4 +18,8 @@ if [ ! -f base.pdf ] || [ ! -f spells.pdf ] || [ ! -f details.pdf ] || [ ! -f ba
 fi
 
 # build character sheet
-pdflatex Character\ Sheet.tex
+if [ ! $1 ]; then
+    pdflatex Character\ Sheet.tex
+else
+    pdflatex "$1"
+fi

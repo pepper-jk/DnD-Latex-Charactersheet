@@ -15,7 +15,7 @@
 	\DndCharacterSheet{
 		Character={
 			Name=Zinlee Ilijor,
-			Class=Cleric 1 \& Rouge 2,
+			Class=Cleric 2 \& Rogue 1,
 			Background=Far Traveler*,
 			Player=Jens,
 			Race=Pixie,
@@ -45,10 +45,9 @@
 			Stealth=2
 		},
 		OtherProficiencies={
-			Light, medium armor, shields\\
-			Simple weapons, Hand crossbow, Longswords, Rapiers, Shortbow\\
-			\\
-			Tools: thieving tools, pan flute\\
+			Light, medium armor, shields\\\\
+			Simple weapons, hand crossbow, longswords, rapiers, shortbow\\
+			Tools: thieves' tools, pan flute\\
 			\\
 			Languages: Common, Sylvan, Thieves' Cant, Any one of your choice\\
 		},
@@ -78,21 +77,22 @@
 			},
 			Weapon3={},
 			Notes={
-				
+				dagger: range(20/60),
+				shortbow: range(80/320)
 			}
 		},
 		Money={
 			Copper=0,
 			Silver=0,
 			Electrum=0,
-			Gold=119,
+			Gold=109,
 			Platin=0,
 		},
 		Equipment={%28/30
 			Studded Leather; %13lbs
 			Shield with Emblem; %6lbs
 			Dagger; %1lbs
-			Clothes, traveler's;%4lbs
+			Clothes, traveler's; %4lbs
 			Shortbow [20]; %3lbs
 			Quiver\\%1lbs
 			\\
@@ -141,7 +141,7 @@
 		Features={
 			Fey\\
 			Wings (30 ft. fly speed) \\
-			Miniature Warrior\\
+			Miniature Warrior (shortbow excluded)\\
 			Fairy Magic\\
 			\\
 			*Shadowfell Experience\\
@@ -152,7 +152,9 @@
 			\\
 			Expertise: Perception, Stealth\\
 			Sneak Attack\\
-			Cunning Action (Dash, Disengage, Hide)\\
+			\\
+			Channel Divinity:
+			Turn Undead
 			\\
 			Grave Domain\\
 			Circle of Mortality\\
@@ -223,28 +225,24 @@
 		SaveDC=13,
 		AtkBonus=5,
 		Cantrips={
-			light\\
-			spare the dying (30 ft., bonus action)\\
-			guidance\\
-			sacred flame\\
-			resistance
+			\textbf{light}\\
+			\textbf{levitate (once per s/l rest)}\\
+			\textbf{spare the dying (30 ft., bonus action)}
+			%3
 		},
+		%5
 		Level1={
-			Slots=2,
+			Slots=3,
 			Spells={
-				bane\\
-				false life\\
-				cure wounds\\
-				purity food and drink\\
-				sanctuary\\
-				shield of faith
+				\textbf{bane}\\
+				\textbf{false life}
 			}
 		},
 		Level2={
-			Slots=0,
-			Spells={
-				levitate (once per s/l rest)
-			}
+			%Spells={
+				%\textbf{gentle repose}\\
+				%\textbf{ray of enfeeblement}
+			%}
 		},
 		Level3={
 		},

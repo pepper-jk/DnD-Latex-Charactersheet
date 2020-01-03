@@ -183,6 +183,10 @@
 	\fp_eval:n{10 + \DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}
 }
 
+\NewExpandableDocumentCommand\DndGetPassiveWisdomPerception{}{
+	\fp_eval:n{\DndGetPassiveWisdom{} + \@DndBase@Skills@Perception * \DndProficiencyBonus{\DndLevel{\@DndBase@Character@Exp}}}
+}
+
 \ExplSyntaxOff
 
 \newcommand\DndCharacterSheet[1]{
@@ -894,7 +898,7 @@
 		\fi
 		%
 		\ifdefined\@DndBase@Abilities@Wisdom		
-			\node[draw=none,rectangle,text width=0.4 cm,align=center] at (\@PassWis@x,\@PassWis@y) {\DndGetPassiveWisdom{}};
+			\node[draw=none,rectangle,text width=0.4 cm,align=center] at (\@PassWis@x,\@PassWis@y) {\DndGetPassiveWisdomPerception{}};
 		\fi
 		%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

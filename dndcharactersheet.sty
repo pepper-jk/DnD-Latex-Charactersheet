@@ -898,7 +898,7 @@
 			\fi \fi
 		\fi
 		%
-		\ifdefined\@DndBase@Abilities@Wisdom		
+		\ifdefined\@DndBase@Abilities@Wisdom
 			\node[draw=none,rectangle,text width=0.4 cm,align=center] at (\@PassWis@x,\@PassWis@y) {\DndGetPassiveWisdom{}};
 		\fi
 		%
@@ -1026,7 +1026,7 @@
 			\ifnum \@DndBase@Hitdice@Count < 13
 				\pgfmathparse{floor(0.5*\@DndBase@Hitdice@Count)-1}
 				\ifnum \@DndBase@Hitdice@Count > 1
-					\foreach \i in {0,...,\pgfmathresult}{	
+					\foreach \i in {0,...,\pgfmathresult}{
 						\node[draw,circle,inner sep=3pt,label=,thick] at ({4.75-0.4*(floor((\@DndBase@Hitdice@Count-1)/2)/2 - \i)},-8.7) {};
 						\node[draw,circle,inner sep=3pt,label=,thick] at ({4.75-0.4*(floor((\@DndBase@Hitdice@Count-1)/2)/2 - \i)},-9.1) {};
 					}
@@ -1275,4 +1275,4 @@
 		\fi
 		%
 		\end{tikzpicture}}]{\basepdf}
-} 
+}

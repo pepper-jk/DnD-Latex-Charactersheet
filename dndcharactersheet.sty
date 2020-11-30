@@ -180,6 +180,10 @@
 	}
 }
 
+\NewExpandableDocumentCommand\DndGetSavingThrowMulti{m m m}{
+	\fp_eval:n{#1 + #2 + #3 * \DndProficiencyBonus{\DndLevel{\@DndBase@Character@Exp}}}
+}
+
 \NewExpandableDocumentCommand\DndGetSavingThrow{m m}{
 	\fp_eval:n{#1 + round(#2 * \DndProficiencyBonus{\DndLevel{\@DndBase@Character@Exp}}, 0) }
 }
@@ -804,7 +808,7 @@
 		% Deception
 		\ifdefined\@DndBase@Abilities@Charisma
 			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@DeceptionValue@x, \@DeceptionValue@y) {\small
-				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Deception}}};
+				\DndDisplaySignedNum{\DndGetSavingThrowMulti{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Deception}}};
 		\fi
 		% History
 		\ifdefined\@DndBase@Abilities@Intelligence
@@ -819,7 +823,7 @@
 		% Intimidation
 		\ifdefined\@DndBase@Abilities@Charisma
 			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@IntimidationValue@x, \@IntimidationValue@y) {\small
-				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Intimidation}}};
+				\DndDisplaySignedNum{\DndGetSavingThrowMulti{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Intimidation}}};
 		\fi
 		% Investigation
 		\ifdefined\@DndBase@Abilities@Intelligence
@@ -844,12 +848,12 @@
 		% Performance
 		\ifdefined\@DndBase@Abilities@Charisma
 			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@PerformanceValue@x, \@PerformanceValue@y) {\small
-				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Performance}}};
+				\DndDisplaySignedNum{\DndGetSavingThrowMulti{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Performance}}};
 		\fi
 		% Persuasion
 		\ifdefined\@DndBase@Abilities@Charisma
 			\node[draw=none,rectangle,text width=0.5 cm,align=right] at (\@PersuasionValue@x, \@PersuasionValue@y) {\small
-				\DndDisplaySignedNum{\DndGetSavingThrow{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\@DndBase@Skills@Persuasion}}};
+				\DndDisplaySignedNum{\DndGetSavingThrowMulti{\DndGetAbilityModifier{\@DndBase@Abilities@Charisma}}{\DndGetAbilityModifier{\@DndBase@Abilities@Wisdom}}{\@DndBase@Skills@Persuasion}}};
 		\fi
 		% Religion
 		\ifdefined\@DndBase@Abilities@Intelligence

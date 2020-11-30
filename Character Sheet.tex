@@ -3,10 +3,10 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
-\pdfminorversion=7 
+\pdfminorversion=7
 
-\usepackage[base=base.pdf]{dndcharactersheet}
-%\usepackage[base=base_alternative.pdf,alt]{dndcharactersheet}
+%\usepackage[base=base.pdf]{dndcharactersheet}
+\usepackage[base=base_alternative.pdf,alt]{dndcharactersheet}
 \usepackage[base=details.pdf]{dnddetailssheet}
 \usepackage[base=spells.pdf]{dndspellsheet}
 
@@ -15,357 +15,264 @@
 
 	\DndCharacterSheet{
 		Character={
-			Name=Gamoreth,
-			Class=Warlock Lvl. 7,
-			Background=Village,
-			Player=Paul,
-			Race=Human,
-			Alignment=Chaos neutral,
-			Exp=31500
+			Name=Nelly Drakenberg,
+			Class=Ranger 3,
+			Background=Haunted One,
+			Player=Jens,
+			Race=Half-Fey Human,
+			Alignment=neutral good,
+			Exp=900
 		},
 		Abilities={
-			Strength=8,
-			Dexterity=12,
+			Strength=10,
+			Dexterity=16,
 			Constitution=14,
-			Intelligence=10,
-			Wisdom=12,
-			Charisma=16
+			Intelligence=12, %incl. human +1
+			Wisdom=16, %incl. human +1
+			Charisma=9
 		},
-		Inspiration={5},
+		Inspiration={},
 		Proficiencies={
-			Wisdom,
-			Charisma,
-			Dexterity=2,
+			Strength,
+			Dexterity
 		},
-		Skills={
+		Skills={ % 3 ranger, 1 human variant, 2 background, 1 Otherworldly Glamour
 			Arcana,
+			Animals,
 			Deception,
-			History,
-			Intimidation,
-			Medicine,
+			Nature,
+			Perception,
+			Stealth,
 			Survival=2
 		},
 		OtherProficiencies={
 			Light armor\\
+			Medium armor\\
+			Shields\\
 			Simple weapons\\
+			Martial weapons\\
 			\\
-			Common\\
-			Abyssal\\
-			Undercommon\\
-			\\
-			Consectetur tenetur rem consectetur eos consequatur adipisci occaecati.
-			Officia adipisci repellat et.
-			Facilis cum libero non.
-			Ratione ea enim quos illum laboriosam.
-			Ut id eum sint soluta.
+			Common, Goblin, Halfling\\
+			Elvish, Sylvan, Druidic
 		},
-		Armor=13,
-		Initiative=1,
+		Armor=15,
 		Speed=30,
 		Hitpoints={
-			Maximum=(53) 14,
-			Current=9,
+			Maximum=28,
+			Current=,
 			Temporary={}
 		},
 		Hitdice={
-			Count=7,
-			Desc=d8
+			Count=3,
+			Desc=d10
 		},
 		Weapons={
 			Weapon1={
-				Name=Spear,
-				Damage=1d8,
-				Type=Piercing
+				Name=Longbow,
+				AtkBonus=5,
+				Damage=1d8+3,
+				Type=piercing
 			},
 			Weapon2={
-				Name=Red dagger,
-				AtkBonus=-3,
-				Damage=d4+2,
-				Type=Piercing
+				Name=
+				WoodenStaff*,
+				AtkBonus=5,
+				Damage=1d8+3,
+				Type=magical
 			},
 			Weapon3={
-				Name=Knife,
-				AtkBonus=2,
-				Damage=d4,
-				Type=Piercing
+				% Name=Dagger,
+				% AtkBonus=5,
+				% Damage=1d4+3,
+				% Type=piercing
 			},
 			Notes={
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Voluptas suscipit unde facilis aut.
-				Nesciunt ut voluptatem quod id.
-				Provident sunt autem eius nulla impedit.
-				Voluptatem doloremque voluptas et.
-				Sit corporis expedita facilis ab sequi minus rerum nam.
-				Et a qui ab ipsum inventore repudiandae.
-				Voluptatem nihil ut consectetur.
-				Aperiam non est nulla dolor voluptatem voluptates dolores autem.
-				Atque natus omnis vitae consequatur reiciendis voluptatem deleniti.
+				* with Shillelagh
 			}
 		},
 		Money={
-			Copper=1337,
-			Silver=404,
-			Electrum=123,
-			Gold=1644,
-			Platin=256,
+			Copper=0,
+			Silver=7,
+			Electrum=0,
+			Gold=1, %starting: 110gp
+			Platin=0,
 		},
 		Equipment={
-			Necklace (arcane focus)\\
-			Knife\\
-			Waterskin\\
-			Studded leather armor\\
-			Box with 2 bandages\\
-			Wand of Winter\\
-			2 Potions of healing\\
-			Red robe with gold arnaments\\
-			20 Demonic iron coins\\
-			2 Silver rings (100G each)\\
-			Simple blue garment\\
-			2 Potions of Restoration
+			Wooden Staff, Ruby of the War Mage,\\
+			Longbow, Quiver, 20 Arrows,\\
+			Studded Leather Armor\\
+			\\
+			Travelers Clothes, Backpack, Waterskin, 2 Rations, 5 Chalk, 5 Torches\\
+			\\
+			Insect Repellent (greasy salve):\\
+			20 applications
 		},
-		Traits={
-			Et ut exercitationem voluptatem.
-			Et eligendi ut repellat consequatur tempora.
-			Quia ut et consequatur accusantium.
+		Traits={\tiny
+			I don't talk about the thing that torments me. I'd rather not burden others with my curse.\\
+			I refuse to become a victim, and I will not allow others to be victimized.
 		},
 		Ideals={
-			Asperiores velit cum impedit minima inventore aspernatur.
-			Aut tempore nam iste provident.
+			I try to help those in need, no matter what the personal cost. (Good)
 		},
 		Bonds={
-			Voluptatem nihil ut consectetur.
-			Aperiam non est nulla dolor voluptatem voluptates dolores autem.
+			I would sacrifice my life and my soul to protect the innocent (fey).
 		},
 		Flaws={
-			Atque natus omnis vitae consequatur reiciendis voluptatem deleniti.
+			I talk to spirits that no one else can see.
 		},
 		Features={
-			War Caster\\
-			Agonizing Blast\\
-			Devils Sight\\
-			Repelling Blast\\
-			Ghostly Gaze\\
+			Metamagic Adept\\
+			- Subtle Spell\\
+			- Twinned Spell\\
 			\\
-			Pact of the Tome\\
-			Fiend Patron\\
-			Dark One's Blessing\\
+			Heart of Darkness\\
 			\\
-			Consectetur tenetur rem consectetur eos consequatur adipisci occaecati.
-			Officia adipisci repellat et.
-			Facilis cum libero non.
-			Ratione ea enim quos illum laboriosam.
-			Ut id eum sint soluta.
-			Voluptatem et maxime harum.
-			Aspernatur est officia qui est ipsam unde itaque.
-			Aperiam sed maxime quasi.
-			Officia debitis corrupti nesciunt deserunt praesentium.
-			Iusto nemo et voluptatibus voluptatem earum explicabo.
-			Officia dolores dolorum voluptatum.
-			Eum sunt id laboriosam nam enim.
-			Atque natus omnis vitae consequatur reiciendis voluptatem deleniti.
-			Assumenda et labore eveniet dolores.
-			Veritatis facilis magni vitae corporis.
+			Favored Foe\\ % or Favored Foe
+			Deft Explorer:\\ % or Natural Explorer
+			- Canny (Survival)\\
+			Druidic Spellcasting Focus\\
+			Druidic Warrior (Fighting Style)\\
+			Fey Wanderer (Archetype):\\
+			- Dreadful Strikes\\
+			- Fey Wanderer Magic\\
+			- Otherworldly Glamour
 		},
 		Notes={
-			Suspendisse feugiat vel purus et ultricies.
-			Etiam nec nunc a tortor gravida hendrerit quis in libero.
-			Quisque pharetra dolor id elit semper,
-			et accumsan ante malesuada.
-			Nullam vel urna eget ex accumsan mollis malesuada eget metus.
-			Nunc viverra luctus ante, non hendrerit felis accumsan eget.
-			Sed sed tempus nulla. Sed accumsan tellus ac sapien eleifend,
-			sit amet porttitor ipsum sagittis.
-			Pellentesque rutrum urna et nisl aliquet vulputate.
-			Aliquam porttitor libero leo.
-			Donec quis ante eu urna feugiat volutpat.
 		}
 	}
 
 	\DndDetailsSheet{
 		Character={
-			Age=40,
-			Height=1.7m,
-			Weight=80kg,
-			Eyes=Brown,
-			Skin=26,
-			Hair=Black
+			Age=30,
+			Height=1.62m,
+			Weight=56.25kg,
+			Eyes=brown,
+			Skin=17,
+			Hair=chestnut brown
 		},
-		Appearance={
-			This is where you insert your appearance.\\
-			\lipsum[4]
-		},
+		Picture={Nelly.png},
 		Backstory={
-			This is where you insert your backstory.\\
-			\lipsum[1]
+			Nelly grew up in a small village close to the edge of a forest.
+			There her parents had a small house.
+			Her father was a hunter and her mother was proficiencies in herbalism.
+			She used to craft potions, salves and, small tinctures, which she sold along with meat from the hunt at the market.
+			Since an early age Nelly was trained in their crafts.
+			When her father died, she had to pick up his bow at a young age in order to provide the now missing income.\\
+			After a while the young gifted hunter became famous in the small community and the teenage archer was invited to a marksmen's festival held be the nearby lord.
+			Quickly she learned that earning money that way was easier than with hunting alone.
+			Despite her mothers doubts Nelly choose to travel to further away festivals, but always returned home to bring money back.\\
+			As Nelly grew older the time between the visits increased, as did the amount of gold she brought back.
+			Eventually her mother had sold the house and married another merchant, who was newly widowed.
+			After this last visit Nelly left her home village for good.
+			Still a young adult she started traveling further than ever before.
+			Visiting big cities and exploring deep forests.
+			Until she met the swan maidens.
 		},
 		Allies={
-			Orga=Organization,
+			Orga=Swan maidens (Swanmways),
+			Symbol=white-feather.jpg,
 			Left={
-				This is where your allies go. Test auto line break.\\
-				You can also put organisations you  belong to in here.\\
-				\lipsum[2]
+				The first time Nelly set foot into a clearing inhabited by fey, she became bewitched by the little creatures.
+				However it did not take long for a swan maiden to confront the intruder.
+				After proofing her worth and loyalty over the course of months and years Nelly was sworn in to the sorority.
+				Nelly learned about the feywild, archfey and, the conflict between Titania, the Fairyqueen, and her evil sister, the Queen of Air and Darkness.\\
+				\\
+				Nelly worships the demigoddess Fionnghuala [fin-ell-ah], who saved Oberon in the last war with the Queen, and is part of her sorority of rangers, called the swanmways, which protects sylvan lands and fey, especially the smaller ones that can not protect themselves.
 			},
 			Right={
-				Here you can put more allies.\\
-				Are you sure you have so many friends?
 			}
 		},
 		Traits={
 			Left={
-				\lipsum[3]
+				Harrowing Event:\\
+				You opened an eldritch tome and saw things unfit for a sane mind. You no longer have the book, but its words and images are burned into your psyche.\\
+				\\
+				After reading an ancient tome about the last war with the queen of air and darkness, her methods and powers, Nelly decided the sorority was not powerful enough to stop the dark queen a second time.\\
+				She joined the adventuring guild in hopes to improve her skills and find magic relics to help in the fight.\\
+				While she is traveling she is always eager to find new allies in the long term too.\\
 			},
 			Right={
-				\lipsum[5]
+			% Appearance={
+				Even though Nelly is mostly human in appearance, one would see her as a faun at first sight.
+				Her \textbf{nose bears the likeness of a deers} and her \textbf{chestnut brown shoulder long hair} is coronated by \textbf{antlers}.
+				Her \textbf{brown eyes} don't help with this mistaking either.
+				Once an observer gets past her \textbf{feywild gifts} though, it is easy to see her for the \textbf{fey-touched human} she is.
+			% },
 			}
 		},
 		Treasure={
 			Left={
-				\lipsum[4]
+				A white feather of a swan.\\
+				The unopened letter to you from your dead father.
 			},
 			Right={
-				\lipsum[4]
+				Nelly wears a green blouse and grey pants underneath her tightly wrapped buckskin armor.
+				She carries a leather backpack, a wooden staff and, a longbow.
+				Both the staff and bow are engraved with runes and the bow is crested with a small ruby in the middle of its handle.
+				Above her cloths but beneath her leather armor she carries a white feather of a swan on a leather band around her neck.
 			}
 		}
 	}
 
 	\DndSpellSheet {
-		Class=Warlock,
-		Ability=CHA,
-		SaveDC=14,
-		AtkBonus=6,
+		Class=Ranger,
+		Ability=WIS,
+		SaveDC=13,
+		AtkBonus=5,
 		Cantrips={
-			Eldritch Blast\\
-			Mage Hand\\
-			Prestidigation\\
-			\\
-			Spellbook (Pact of Tome):\\
-			\-\hspace{1em} Fire Bolt\\
-			\-\hspace{1em} Minor Illusion\\
-			\-\hspace{1em} Mending
+			Shillelagh\\
+			Thorn Whip
 		},
 		Level1={
-			Slots=1,
+			Slots=3,
 			Spells={
-				Burning Hands\\
-				\\
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Nunc et urna vitae odio imperdiet porta.
-				Praesent facilisis urna sit amet leo imperdiet,
-				nec varius nulla elementum.
-				Quisque scelerisque nibh finibus tortor accumsan,
-				eget ultrices turpis consequat.
-				Suspendisse congue diam sed urna iaculis,
-				quis scelerisque erat euismod.
-				Orci varius natoque penatibus et magnis dis
+				Charm Person\\
+				% Cure Wounds\\
+				% Detect Magic\\
+				Ensnaring Strike\\
+				% Hail of Thorns\\
+				Hunter's Mark\\
+				Speak with Animals
 			}
 		},
 		Level2={
-			Slots=2,
+			Slots=0,
 			Spells={
-				Invisibility\\
-				Spider Climb\\
-				\\
-				Aliquam erat volutpat.
-				Etiam laoreet leo non neque pretium elementum.
-				Sed sed interdum velit.
-				Praesent varius vehicula sem, et commodo lorem.
-				Donec at lectus sagittis nunc convallis placerat.
-				Aenean venenatis, purus eu vulputate tincidunt,
-				nunc dolor sollicitudin urna,
-				eget fringilla quam dui a lectus.
 			}
 		},
 		Level3={
-			Slots=3,
+			Slots=0,
 			Spells={
-				Fire Ball\\
-				Hunger of Hadar\\
-				Tongues\\
-				\\
-				Nam ultrices, mi vitae tincidunt laoreet,
-				risus lacus tincidunt eros,
-				sed lacinia massa dui sed massa.
-				Cras blandit nisi quis velit mollis porta in sed nisl.
-				Curabitur lectus massa, euismod sed nibh et,
-				rhoncus consectetur sapien.
-				Nulla iaculis libero eu rutrum venenatis.
-				Integer sodales accumsan elit eu ultrices.
 			}
 		},
 		Level4={
-			Slots=4,
+			Slots=0,
 			Spells={
-				Wall of Fire\\
-				Dimension Door\\
-				\\
-				Quisque tincidunt dignissim odio,
-				in sollicitudin nibh gravida finibus.
-				Nulla urna orci, placerat quis quam a,
-				posuere ultricies ligula.
-				Quisque dignissim euismod ligula,
-				eget hendrerit quam suscipit vel.
-				Etiam sem purus, sagittis ut consequat a,
-				lacinia quis felis.
-				Nullam rhoncus id nunc non facilisis.
-				Cras elementum sed odio et ornare.
 			}
 		},
 		Level5={
-			Slots=5,
+			Slots=0,
 			Spells={
-				Curabitur faucibus lorem cursus malesuada suscipit.
-				Vivamus egestas aliquet arcu,
-				in euismod metus condimentum et.
-				Praesent hendrerit lectus vitae mauris viverra elementum.
-				Praesent vehicula sit amet purus id tincidunt.
-				Donec vehicula sed ex at volutpat.
-				Aenean pellentesque semper est ac congue.
 			}
 		},
 		Level6={
-			Slots=6,
+			Slots=0,
 			Spells={
-				Pellentesque tincidunt finibus nibh,
-				ac sollicitudin sapien pharetra sed.
-				Sed ut sapien ut purus varius tincidunt vitae dapibus lacus.
-				Mauris et dolor ut enim commodo elementum ac at ex.
-				Nullam dolor neque, eleifend eget placerat ac,
-				hendrerit non nibh.
-				Mauris tincidunt eu augue nec lacinia.
 			}
 		},
 		Level7={
-			Slots=7,
+			Slots=0,
 			Spells={
-				Mauris aliquet euismod nisl vel lobortis.
-				Nullam vitae augue quis ligula rhoncus aliquet sit amet at tortor.
-				Nam facilisis, libero non posuere tincidunt,
-				ipsum neque auctor massa, nec lacinia metus magna a leo.
-				Mauris id rutrum risus, a dictum felis.
-				Aliquam eget posuere odio.
 			}
 		},
 		Level8={
-			Slots=8,
+			Slots=0,
 			Spells={
-				Vestibulum lorem nunc, vehicula quis volutpat convallis,
-				cursus eu ligula. Proin quis posuere nulla.
-				Nam non posuere tortor.
-				Proin ac finibus libero.
-				Nulla nunc diam, malesuada et magna ac,
-				pulvinar varius nisl.
-				Nulla facilisi.
 			}
 		},
 		Level9={
 			Slots=0,
 			Spells={
-				eu efficitur justo iaculis eget.
-				Fusce luctus dolor sem, nec aliquam leo tempus non.
-				Aliquam consequat enim eu congue eleifend.
-				Morbi in tincidunt dolor.
-				Class aptent taciti sociosqu ad litora torquent
-				per conubia nostra.
 			}
 		}
 	}

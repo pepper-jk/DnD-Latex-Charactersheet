@@ -22,7 +22,9 @@
 \define@key[DndDetails]{Character}{Skin}{\def\@DndDetails@Character@Skin{#1}}
 \define@key[DndDetails]{Character}{Hair}{\def\@DndDetails@Character@Hair{#1}}
 
-\define@key[DndDetails]{Base}{Picture}{\def\@DndDetails@Base@Picture{#1}}
+\define@key[DndDetails]{Base}{Picture}{\setkeys[DndDetails]{Picture}{#1}}
+\define@key[DndDetails]{Picture}{Image}{\def\@DndDetails@Picture@Image{#1}}
+\define@key[DndDetails]{Picture}{Align}{\def\@DndDetails@Picture@Align{#1}}
 \define@key[DndDetails]{Base}{Appearance}{\def\@DndDetails@Base@Appearance{#1}}
 
 \define@key[DndDetails]{Base}{Backstory}{\def\@DndDetails@Base@Backstory{#1}}
@@ -90,9 +92,14 @@
 		%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		%
-		\ifdefined\@DndDetails@Base@Picture
-			\node[draw=none,rectangle,text width=5.7 cm,align=center] at (-0.3,-5.4) {%
-				\includegraphics[width=5.7cm, height=7.7cm, keepaspectratio]{\@DndDetails@Base@Picture}
+		\ifdefined\@DndDetails@Picture@Image
+			\ifdefined\@DndDetails@Picture@Align
+				\newcommand{\picalign}{\@DndDetails@Picture@Align}
+			\else
+				\newcommand{\picalign}{center}
+			\fi
+			\node[draw=none,rectangle,text width=5.7 cm,align=\picalign] at (-0.3,-5.4) {%
+				\includegraphics[width=5.4cm, height=7.7cm, keepaspectratio]{\@DndDetails@Picture@Image}
 			};
 		\fi
 		% Text

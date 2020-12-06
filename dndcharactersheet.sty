@@ -181,7 +181,7 @@
 }
 
 \NewExpandableDocumentCommand\DndGetSavingThrow{m m}{
-	\fp_eval:n{#1 + #2 * \DndProficiencyBonus{\DndLevel{\@DndBase@Character@Exp}}}
+	\fp_eval:n{#1 + round(#2 * \DndProficiencyBonus{\DndLevel{\@DndBase@Character@Exp}}, 0) }
 }
 
 \NewExpandableDocumentCommand\DndGetPassiveWisdom{}{
@@ -605,75 +605,75 @@
 			\def \@Survival@y {\@Skills@y+17*\@Skills@dist}
 		\fi
 		% Acrobatics
-		\ifnum \@DndBase@Skills@Acrobatics > 0
+		\ifdim \@DndBase@Skills@Acrobatics pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Acrobatics@x, \@Acrobatics@y) {};
 		\fi
 		% Animal handling
-		\ifnum \@DndBase@Skills@Animals > 0
+		\ifdim \@DndBase@Skills@Animals pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Animal@x, \@Animal@y) {};
 		\fi
 		% Arcana
-		\ifnum \@DndBase@Skills@Arcana > 0
+		\ifdim \@DndBase@Skills@Arcana pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Arcana@x, \@Arcana@y) {};
 		\fi
 		% Athletics
-		\ifnum \@DndBase@Skills@Athletics > 0
+		\ifdim \@DndBase@Skills@Athletics pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Athletics@x, \@Athletics@y) {};
 		\fi
 		% Deception
-		\ifnum \@DndBase@Skills@Deception > 0
+		\ifdim \@DndBase@Skills@Deception pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Deception@x, \@Deception@y) {};
 		\fi
 		% History
-		\ifnum \@DndBase@Skills@History > 0
+		\ifdim \@DndBase@Skills@History pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@History@x, \@History@y) {};
 		\fi
 		% Insight
-		\ifnum \@DndBase@Skills@Insight > 0
+		\ifdim \@DndBase@Skills@Insight pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Insight@x, \@Insight@y) {};
 		\fi
 		% Intimidation
-		\ifnum \@DndBase@Skills@Intimidation > 0
+		\ifdim \@DndBase@Skills@Intimidation pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Intimidation@x, \@Intimidation@y) {};
 		\fi
 		% Investigation
-		\ifnum \@DndBase@Skills@Investigation > 0
+		\ifdim \@DndBase@Skills@Investigation pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Investigation@x, \@Investigation@y) {};
 		\fi
 		% Medicine
-		\ifnum \@DndBase@Skills@Medicine > 0
+		\ifdim \@DndBase@Skills@Medicine pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Medicine@x, \@Medicine@y) {};
 		\fi
 		% Nature
-		\ifnum \@DndBase@Skills@Nature > 0
+		\ifdim \@DndBase@Skills@Nature pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Nature@x, \@Nature@y) {};
 		\fi
 		% Perception
-		\ifnum \@DndBase@Skills@Perception > 0
+		\ifdim \@DndBase@Skills@Perception pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Perception@x, \@Perception@y) {};
 		\fi
 		% Performance
-		\ifnum \@DndBase@Skills@Performance > 0
+		\ifdim \@DndBase@Skills@Performance pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Performance@x, \@Performance@y) {};
 		\fi
 		% Persuasion
-		\ifnum \@DndBase@Skills@Persuasion > 0
+		\ifdim \@DndBase@Skills@Persuasion pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Persuasion@x, \@Persuasion@y) {};
 		\fi
 		% Religion
-		\ifnum \@DndBase@Skills@Religion > 0
+		\ifdim \@DndBase@Skills@Religion pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Religion@x, \@Religion@y) {};
 		\fi
 		% Sleight of hand
-		\ifnum \@DndBase@Skills@SleightOfHand > 0
+		\ifdim \@DndBase@Skills@SleightOfHand pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@SleightOfHand@x, \@SleightOfHand@y) {};
 		\fi
 		% Stealth
-		\ifnum \@DndBase@Skills@Stealth > 0
+		\ifdim \@DndBase@Skills@Stealth pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Stealth@x, \@Stealth@y) {};
 		\fi
 		% Survival
-		\ifnum \@DndBase@Skills@Survival > 0
+		\ifdim \@DndBase@Skills@Survival pt > 0.5 pt
 			\node[circle,fill,inner sep=1.2pt,label=] at (\@Survival@x, \@Survival@y) {};
 		\fi
 		%

@@ -16,7 +16,7 @@
 	\DndCharacterSheet{
 		Character={
 			Name=Nelly Drakenberg,
-			Class=Ranger 3,
+			Class=Ranger 4,
 			Background=Haunted One,
 			Player=Jens,
 			Race=Half-Fey Human,
@@ -28,7 +28,7 @@
 			Dexterity=16,
 			Constitution=14,
 			Intelligence=12, %incl. human +1
-			Wisdom=16, %incl. human +1
+			Wisdom=17, %incl. human +1 and Fey Touched +1
 			Charisma=9
 		},
 		Inspiration={},
@@ -58,7 +58,7 @@
 		Armor=15,
 		Speed=30,
 		Hitpoints={
-			Maximum=28,
+			Maximum=36,
 			Current=,
 			Temporary={}
 		},
@@ -135,6 +135,12 @@
 			Metamagic Adept\\
 			- Subtle Spell\\
 			- Twinned Spell\\
+			Fey Touched\\
+			- Misty Step\\
+			- Detect Evil and Good\\
+			% Eldritch Adept\\
+			% - Devils Sight (120ft. darkvision)\\
+			% - Witch Sight
 			\\
 			Heart of Darkness\\
 			\\
@@ -249,8 +255,9 @@
 			Spells={
 				Charm Person\\
 				Cure Wounds\\
-				% Detect Magic\\
-				Ensnaring Strike\\
+				Detect Evil and Good\\
+				Detect Magic\\
+				% Ensnaring Strike\\
 				% Hail of Thorns\\
 				Hunter's Mark\\
 				% Speak with Animals
@@ -259,6 +266,7 @@
 		Level2={
 			Slots=0,
 			Spells={
+				Misty Step
 			}
 		},
 		Level3={

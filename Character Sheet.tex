@@ -15,81 +15,138 @@
 
 	\DndCharacterSheet{
 		Character={
-			Name=,
-			Class=,
-			Background=,
-			Player=,
-			Race=,
-			Alignment=,
-			Exp=0
+			Name=Murmiir Bormul,
+			Class=Eldritch Knight (F) 4,
+			Background=Burbuldor Noble,
+			Player=Jens,
+			Race=Mountain Dwarf,
+			Alignment=Lawful Neutral,
+			Exp=2700
 		},
 		Abilities={
-			Strength=8,
-			Dexterity=8,
-			Constitution=8,
-			Intelligence=8,
-			Wisdom=8,
-			Charisma=8
+			Strength=20, % incl. dwarf +2
+			Dexterity=10,
+			Constitution=17, % incl. dwarf +2
+			Intelligence=16,
+			Wisdom=9,
+			Charisma=6
 		},
 		Inspiration={},
 		Proficiencies={
+			Constitution,
+			Strength,
 		},
 		Skills={
+			Athletics,
+			History,
+			Perception,
+			Persuasion,
 		},
 		OtherProficiencies={
+			Light armor, medium armor, heavy armor, shields\\
+			simple weapons, martial weapons\\
+			\\
+			Common\\
+			Dwarvish\\
+			Orc\\
+			\\
+			Dragonchess, Smith's tools\\
 		},
-		Armor=,
+		Armor=\LARGE16\small+2,
 		%Initiative=,
-		Speed=,
+		Speed=25,
 		Hitpoints={
-			Maximum=,
+			Maximum=40,
 			Current=,
 			Temporary={}
 		},
 		Hitdice={
-			Count=1,
-			Desc=
+			Count=4,
+			Desc=d10
 		},
 		Weapons={
 			Weapon1={
-				Name=,
-				AtkBonus=0,
-				Damage=,
-				Type=
+				Name=Handaxe T,
+				AtkBonus=7,
+				Damage=1d6+7,
+				Type=slash
 			},
 			Weapon2={
-				Name=,
-				AtkBonus=0,
-				Damage=,
-				Type=
+				Name=Battleaxe,
+				AtkBonus=7,
+				Damage=1d8+5,
+				Type=slash
 			},
 			Weapon3={
-				Name=,
-				AtkBonus=0,
-				Damage=,
-				Type=
+				Name=Battleaxe V,
+				AtkBonus=7,
+				Damage=1d10+5,
+				Type=slash
 			},
 			Notes={
+				V = with two hands\\
+				T = thrown (60 ft. range)\\
+
+				Handaxes:\\
+				Epilogue, Bond of Mountains\\
+				Frostbite, Glory of Trials\\
+				Agatha, Runed Blade of Hell's Games\\
+
+				Battleaxe:\\
+				Reckoning, Corroded War Axe\\
+
+				Weapon Bond: Epilogue, Frostbite\\
 			}
 		},
 		Money={
 			Copper=0,
-			Silver=0,
+			Silver=9,
 			Electrum=0,
-			Gold=0,
+			Gold=10,
 			Platin=0,
 		},
 		Equipment={
+			fine clothes, a signet ring, a scroll of pedigree, scroll case, a skin of fine wine, bedroll, traveler's clothes, 10 chalk\\
+			chain mail, shield, 3 handaxes, battleaxe\\
+			\textbf{dungeoneer's pack:} backpack, crowbar, hammer, 10 pitons, 10 torches, tinderbox, 10 rations, waterskin, 50 ft hempen rope
 		},
 		Traits={
+			\tiny
+			Despite my noble birth, I do not place myself above other folk. We all have the same blood.\\
+			I face problems head-on. A simple, direct solution is the best path to success.\\
+			I can stare down a hell hound without flinching.\\
 		},
 		Ideals={
+			\tiny
+			Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)\\
+			Glory. I will bring glory to my family. This can only be done with an axe not with a quill.\\
 		},
 		Bonds={
+			My honor is my life.\\
+			I will to anything to recover the handaxes of my family.\\
 		},
 		Flaws={
+			Dying an honorable death is better than shying away from a fight.\\
 		},
 		Features={
+			\textbf{Darkvision} (60 feet)\\
+			\textbf{Dwarven Resilience} (poison)\\
+			\textbf{Stonecunning}\\
+			\textbf{Kept in Style}\\
+			% \textbf{Fighting Style}\\
+			\textbf{Thrown Weapon Fighting} (FS)\\
+			thrown weapons: +2 bonus damage,\\
+			draw as part of the attack\\
+			\textbf{Second Wind} (S/L) \textit{bonus action}\\
+			regain hp = 1d10 + 4 (fighter level)\\
+			\textbf{Action Surge} (S/L)\\
+			\textbf{Weapon Bond} (2 handaxes)\\
+			- can't be disarmed of that weapon unless incapacitated\\
+			- \textit{bonus action} causing it to teleport instantly to your hand\\
+			\textbf{Sharpshooter} (Feat 4th Level)\\
+			on ranged weapon attacks:\\
+			- no disadvantage at long range\\
+			- ignore half and three-quarters cover\\
 		},
 		Notes={
 		}
@@ -97,12 +154,12 @@
 
 	\DndDetailsSheet{
 		Character={
-			Age=,
-			Height=,
-			Weight=,
-			Eyes=,
-			Skin=,
-			Hair=,
+			Age=57,
+			Height=1.30 m,
+			Weight=75.3 kg,
+			Eyes=green,
+			Skin=fair (16),
+			Hair=black (dark brown),
 		},
 		Appearance={
 		},
@@ -130,15 +187,21 @@
 	}
 
 	\DndSpellSheet {
-		Class=,
-		Ability=,
-		SaveDC=,
-		AtkBonus=0,
+		Class=Eldritch Knight,
+		Ability=Int,
+		SaveDC=13,
+		AtkBonus=5,
 		Cantrips={
+			Message\\
+			Sword Burst\\
 		},
 		Level1={
-			Slots=0,
+			Slots=3,
 			Spells={
+				Absorb Elements\\
+				Frost Fingers\\
+				Shield\\
+				Thunderwave\\
 			}
 		},
 		Level2={
